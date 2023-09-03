@@ -1,0 +1,549 @@
+
+  Jugendwettbewerb Informatik 2022: Die Aufgaben der 3. Runde (Junioraufgaben) / 41. Bundeswettbewerb Informatik: Die Aufgaben der 1. Runde
+Reimerei Container Störung Verzinkt Sudokopie
+Aysun möchte für ihren kleinen Bruder Reimrätsel erstellen. Dafür benötigt sie Wörter, die sich reimen. Um mehr Auswahl zu haben, lädt sie sich eine umfangreiche Liste von Wörtern aus dem Internet herunter. Nun brauchst sie nur noch ein Programm, das ihr aus dieser Liste passende Wortpaare heraussucht.
+Junioraufgabe 1
+Schreibe ein Programm, das eine Liste von Wörtern einliest und daraus alle passenden Wortpaare berechnet. Ein Wortpaar ist passend, wenn es die folgenden Regeln erfüllt:
+1) Die beiden Worte enden gleich: Sie haben dieselbe maßgebliche Vokalgruppe, und nach der maßgeblichen Vokalgruppe enthalten beide Wörter dieselben Buchstaben in derselben Reihenfolge. Dabei ist eine Vokalgruppe eine längstmögliche Folge von unmittelbar aufeinanderfolgenden Vokalen (z.B. hat das Wort Taifun die Vokalgruppen ‚ai‘ und ‚u‘), und die maßgebliche Vokalgruppe eines Wortes ist seine vorletzte Vokalgruppe, wenn das Wort zwei oder mehr Vokalgruppen enthält. Enthält ein Wort nur eine Vokalgruppe, ist seine maßgebliche Vokalgruppe die eine vorhandene Vokalgruppe.
+  Mehrere Container werden per Kran auf ein Schiff verladen. Der schwerste Container soll zuerst auf das Schiff platziert werden; das ist bei Seegang gut für den Schwerpunkt.
+Jeder Container ist vorher mindestens einmal mit einem anderen Container auf der Container-Paar- Waage gewesen. Für jedes gewogene Container- Paar ist danach nur bekannt, welcher der beiden Container der schwerere ist. Von den Containern haben keine zwei das gleiche Gewicht.
+Steht damit fest, welchen Container die Kranführerin zuerst verladen soll?
+Junioraufgabe 2
+Schreibe ein Programm, das die Kranführerin unterstützt.
+Das Programm soll für die gewogenen Container- Paare einlesen, welcher Container jeweils der schwerere ist.
+Anschließend soll das Programm ausgeben, ob daraus eindeutig der schwerste Container bestimmt werden kann. Falls ja, soll das Programm außerdem ausgeben, welcher Container das ist.
+Wende dein Programm mindestens auf alle Beispiele an, die du auf den BWINF-Webseiten findest, und dokumentiere die Ergebnisse.
+    Alice und Bob tauschen in ihrem persönlichen Chat gerne Sätze aus, die Zitate aus ihrem Lieblings- buch sind. Leider hat Trudi einen Weg gefunden, Lücken in die Sätze zu reißen und ganze Wörter verschwinden zu lassen. So empfing Bob vor Kurzem diesen Lückensatz von Alice, den er nicht verstehen konnte:
+ das...mir... ... ...vor
+ Er musste lange im Buch blättern, bis er diese passende Stelle darin fand:
+ das kommt mir gar nicht richtig vor
+ Aber er ist unsicher, denn schließlich könnte es ja noch andere passende Stellen geben.
+Alice und Bob überlegen, wie sie das Problem lösen können. Den Text des Lieblingsbuches gibt es auch digital. Da könnte es doch möglich sein, sich die Suche nach passenden Stellen von einem Computerprogramm abnehmen zu lassen.
+Aufgabe 1
+Hilf Alice und Bob und schreibe ein Programm, das für einen Lückensatz nach passenden Stellen im
+15
+28
+29 18
+39
+2) In jedem der beiden Wörter enthält die maß- gebliche Vokalgruppe und was ihr folgt mindestens die Hälfte der Buchstaben.
+3) Keines der beiden Wörter darf mit dem kom- pletten anderen Wort enden.
+Passende Wortpaare wären zum Beispiel Baum, Traum und singen, klingen; aber Tanne, Rinne ver- letzt Regel 1, Informatik, Akrobatik verletzt Regel 2, und kaufen, verkaufen verletzt Regel 3.
+Wende dein Programm mindestens auf alle Beispiele an, die du auf den BWINF-Webseiten findest, und dokumentiere die Ergebnisse.
+ Lieblingsbuch sucht.
+Auf den BWINF-Webseiten findest du den digitalen Text des Lieblingsbuchs und einige Lückensätze. Wende dein Programm mindestens auf diese Beispiele an und dokumentiere die Ergebnisse.
+        Aufgabe 3
+Hilf Rudi, indem du ein Programm schreibst, das zwei Sudokus einliest und überprüft, ob sie Varianten voneinander sind. Wenn ja, soll das Programm Umformungen ausgeben, mit denen das eine aus dem anderen Sudoku erzeugt werden kann.
+Wende dein Programm mindestens auf alle Beispiele an, die du auf den BWINF-Webseiten findest, und dokumentiere die Ergebnisse.
+       B
+WI
+INFVER
+R
+L
+L
+LA
+A
+A
+G
+             Muster wie im Bild unten sieht man an feuerver- zinkten Metallen, zum Beispiel an den Masten von Laternen oder Ampeln. Diese Muster entstehen, indem sich beim Erkalten des flüssigen Zinks, von zufällig vorhandenen Kristallisationskeimen aus, Kristalle bilden. Jeder Keim hat eine bestimmte Orientierung. Um ihn herum wächst ein Kristall mit der gleichen Orientierung, bis er auf andere Kristalle trifft. Kristalle unterschiedlicher Orientierung reflektieren das Licht unterschiedlich und erscheinen so unterschiedlich hell.
+Quelle: https://de.wikipedia.org/wiki/Datei:Feuerverzinkte_
+Oberfläche.jpg
+Aufgabe 2
+Versuche, solche Kristallmuster mit dem Computer zu generieren. Schreibe dazu ein Programm, das die Entstehung solcher Muster simuliert.
+Deine Simulation soll sich an folgende Vorgaben halten:
+> Der Ort eines Kristallisationskeims wird als Punkt in einem zweidimensionalen Raster dargestellt.
+> Von einem Keim aus wächst der Kristall schrittweise in die vier Raster-Richtungen, also nach links, rechts, oben und unten.
+> Für jede dieser Richtungen hat ein Kristall eigene Wachstumsgeschwindigkeiten.
+> Ein Kristall wächst so weit wie möglich, aber nicht in die Fläche eines anderen Kristalls hinein.
+> Die aus der jeweiligen Orientierung resultierenden unterschiedlichen Lichtreflek- tonen der Kristalle werden als Grautöne repräsentiert.
+Deine Simulation soll in einigen Parametern variiert werden, zum Beispiel in der Anzahl und den Orten der Keime sowie den Entstehungszeitpunkten und den Wachstumsgeschwindigkeiten der Kristalle.
+Visualisiere die durch die Simulation entstandenen Muster als Pixelbilder. Mit welchen Werten für die Parameter erhältst du Bilder, die dem Bild oben ähneln?
+                                      Rudi ist gar nicht mehr begeistert von den Sudokus seiner Rätselzeitung: Er hat den starken Verdacht, dass die Redaktion die Sudoku-Aufgaben immer wieder- verwendet! Die Rätsel sehen zwar unterschiedlich aus, aber der Lösungsweg wiederholt sich erkennbar. Er möchte nun seinen Verdacht nachweisen.
+Rudi überlegt sich, dass man aus einem Sudoku sehr viele Varianten erzeugen kann, indem man eine oder mehrere der folgenden Umformungen durchführt:
+> Permutation (Umordnung) der drei Spalten innerhalb der Spaltenblöcke.
+> Permutation der drei Spaltenblöcke.
+> Permutation der drei Zeilen innerhalb der
+Zeilenblöcke.
+> Permutation der drei Zeilenblöcke.
+> 90-Grad-Rotation im Uhrzeigersinn.
+> Umbenennen der Ziffern 1 bis 9
+(z.B. alle ‚8‘en und ‚3‘en vertauschen).
+So sind zum Beispiel diese beiden Rätsel Varianten voneinander:
+5 8 49 5196 Zeile1 5346
+67312478 26
+   Zeilen- block 2
+ 74152658 3234 49534651
+Spaltenblock 1 Spalte 4
+Hierbei wurden der 1. und der 3. Spaltenblock sowie die 5. und die 6. Zeile vertauscht und die Ziffern wie folgt umbenannt:
+1 2, 2 3, ... , 8 9, 9 1.
+      
+41. Bundeswettbewerb Informatik: Die Aufgaben der 1. Runde / Jugendwettbewerb Informatik 2022: Die Aufgaben der 3. Runde (Junioraufgaben) Fahrradwerkstatt Hüpfburg Teilnehmen
+                                  Marc hat sich mit einer kleinen Fahrradwerkstatt selbstständig gemacht. Aufgrund des Fahrrad- Booms wird es zunehmend schwierig, die ganzen Reparaturaufträge von Kunden abzuarbeiten.
+Daher arbeitet Marc bereits jeden Tag von 9 bis 17 Uhr. Wenn er einen Auftrag beginnt, erledigt er ihn vollständig, bevor er einen neuen Auftrag beginnt. Am Ende eines Arbeitstages unterbricht er gegebenenfalls den aktuellen Auftrag und nimmt ihn am nächsten Arbeitstag wieder auf.
+Bislang erledigt er die Aufträge einfach in der Reihen- folge des Eingangs. Damit sind manche Kunden unzufrieden: Kurze Aufträge müssen teilweise sehr lange warten, weil die Werkstatt durch lange Aufträge blockiert ist. Marc hat sich bereits ein anderes Verfahren überlegt: Wann immer er einen neuen Auftrag beginnt, wählt er den kürzesten unter den bereits vorliegenden Aufträgen.
+Aufgabe 4
+1) Unterstütze Marc und schreibe ein Programm, das die beiden Verfahren simuliert. Dazu bekommt es eine Liste von Aufträgen. Für jeden Auftrag sind Eingangszeitpunkt und Bearbeitungsdauern in Minuten angegeben. Für die beiden Verfahren soll das Programm die durchschnittliche und die maximale Wartezeit der Aufträge (in Minuten) berechnen. Die Wartezeit eines Auftrags ist die Differenz zwischen dem Zeitpunkt seiner Fertigstellung und seinem Eingangszeitpunkt.
+2) Begründe, warum auch bei dem zweiten Verfahren vermutlich nicht alle Kunden zufrieden sein werden.
+3) Gibt es Verfahren, die du für besser geeignet hältst? Hierzu kannst du dir auch weitere Kenn- zahlen als nur die durchschnittliche und maximale Wartezeit der Aufträge überlegen. Verändere dein Programm entsprechend und beschreibe, inwiefern dein Verfahren deine Erwartungen erfüllt.
+Wende dein Programm mindestens auf alle Beispiele an, die du auf den BWINF-Webseiten findest, und dokumentiere die Ergebnisse.
+Sasha und Mika durchlaufen miteinander nach folgenden Regeln einen mit Kreide auf den Schulhof gemalten Parcours:
+1) Sasha startet auf Feld 1 und Mika auf Feld 2.
+2) In jedem Schritt springen beide gleichzeitig, jeweils entlang eines Pfeils, auf ein neues Feld.
+3) Der Parcours gilt als erfolgreich absolviert, sobald beide auf demselben Feld landen.
+Den folgenden Parcours können sie tatsächlich erfolgreich absolvieren, aber man kann auch solche zeichnen, für die das nicht möglich ist.
+Aufgabe 5
+Überlege dir, wie man feststellen kann, ob Sasha und Mika einen Parcours erfolgreich absolvieren können. Schreibe ein Programm das einen Parcours einliest und dann ausgibt, ob dieser Parcours er- folgreich absolviert werden kann. Falls es möglich ist, soll außerdem eine erfolgreiche Folge von Sprüngen für Sasha und Mika ausgegeben werden.
+Den obigen Parcours können Sasha und Mika in drei Schritten erfolgreich absolvieren, indem sie gleichzeitig auf Feld 10 landen.
+Wende dein Programm mindestens auf alle Beispiele an, die du auf den BWINF-Webseiten findest, und dokumentiere die Ergebnisse.
+Dieses Blatt enthält die Aufgaben der 1. Runde des 41. Bundeswettbewerbs Informatik. Die Junioraufgaben sind gleichzeitig die Aufgaben der 3. und letzten Runde des Jugendwettbewerbs Informatik 2022.
+Einsendeschluss für beide Wettbewerbe: 21. November 2022.
+Anmelden
+online unter: login.bwinf.de
+Sobald du dort registriert bist, kannst du dich dort
+auch zur Teilnahme anmelden: für Jugendwettbewerb (3. Runde), Bundeswettbewerb oder beides. Bei der Anmeldung zum Jugendwettbewerb musst du deine Kennung der Online-Runden (E-Mail-Adresse oder Logincode) angeben.
+Bearbeiten
+In der 3. Runde des Jugendwettbewerbs bearbeitest du eigenständig die beiden Junioraufgaben. Im Bundes- wettbewerb sind die Junioraufgaben SchülerInnen vor der Qualifikationsphase des Abiturs vorbehalten; wer in die 2. Runde kommen will, muss drei oder mehr Aufgaben bearbeiten, einzeln oder im Team.
+Einsenden
+Für jede bearbeitete Aufgabe sollst du im schriftlichen Teil deiner Einsendung (Dokumentation)
+Fragen?
+Wende dich an BWINF:
+> E-Mail: bundeswettbewerb@bwinf.de
+bzw. jugendwettbewerb@bwinf.de > Telefon: 0228 378646
+> Chat: bwinf.de/chat
+Diskutiere mit den Mitgliedern der EI Community:
+einstieg-informatik.de/community
+Tipps und Infos
+Unter bwinf.de/bundeswettbewerb/tipps findest du > genauere Hinweise zur Einsendung;
+> Beispiele für Aufgabenbearbeitungen;
+> Tipps zu Informatik und Programmierung.
+Deine Chancen
+Mit einer Teilnahme am Bundeswettbewerb Informatik kannst du nur gewinnen. In allen Runden gibt
+es Urkunden sowie kleine Geschenke für alle.
+Bei erfolgreicher Teilnahme an der 1. Runde kannst du zu Informatik-Workshops eingeladen werden,
+die von vielen BWINF-Partnern wie dem Hasso-Plattner- Institut und der DB Systel ausgerichtet werden. Google lädt Teilnehmerinnen zum Girls@Google Day ein.
+Nach deiner Teilnahme an der 2. Runde winken die Forschungstage Informatik des Max-Planck- Instituts für Informatik und einige Buchpreise. Die Ein- sendung zur 2. Runde kann in einigen Bundesländern als besondere Lernleistung in die Abiturwertung eingebracht werden.
+Die Besten der 2. Runde erreichen die Endrunde. Dort werden Bundessieger und Preisträger ermittelt; sie werden mit Geldpreisen belohnt. Die Bundes- sieger werden in der Regel ohne weiteres Auswahl- verfahren in die Studienstiftung des deutschen Volkes aufgenommen.
+Siehe auch: bwinf.de/bundeswettbewerb/chancen
+bwinf.de/teilnehmen
+> Triff Teilnehmerinnen und Teilnehmer in der Community auf einstieg-informatik.de!
+            15
+6
+3
+5
+13
+> >
+> >
+deine Lösungsidee beschreiben;
+die Umsetzung der Idee in ein Programm erläutern;
+an genügend Beispielen zeigen, dass und wie deine Lösung funktioniert; und
+die wichtigsten Teile des Quelltextes anfügen.
+      12
+8 18
+Achtung: eine gute Dokumentation muss nicht lang sein, aber unbedingt die Beispiele enthalten!
+Der praktische Teil deiner Einsendung ist die Implementierung und umfasst den kompletten Quelltext und das ausführbare Programm (Windows, Linux, MacOS X oder Android).
+Die Einsendung wird über login.bwinf.de als ZIP- Dateiarchiv abgegeben. Ein Team gibt gemeinsam nur eine Einsendung ab.
+Weitere Informationen unter: bwinf.de/teilnehmen
+Doppelteilnahme: Teilnehmende am Jugendwett- bewerb vor der Qualifikationsphase können ihre Bearbeitungen der Junioraufgaben auch zur 1. Runde des Bundeswettbewerbs einsenden, gemeinsam mit der Bearbeitung mindestens einer weiteren Aufgabe.
+        1014 14
+            2
+19
+20
+16
+9 17
+      11
+twitter.com/_BWINF instagram.com/bwinf
+„Anton.  Nein.
+
+Damis.  Noch nicht?  Hast du auch nach der rechten gefragt?  Die Post
+von Berlin—
+
+Anton.  Nun ja doch; die Post von Berlin; sie ist noch nicht da!  Wenn
+sie aber nicht bald kömmt, so habe ich mir die Beine abgelaufen.  Tun
+Sie doch, als ob sie Ihnen, wer weiß was, mitbringen würde!  Und ich
+wette, wenn's hoch kömmt, so ist es eine neue Scharteke oder eine
+Zeitung oder sonst ein Wisch.—
+
+Damis.  Nein, mein guter Anton; dasmal möchte es etwas mehr sein.  Ah!
+wann du es wüßtest—
+
+Anton.  Will ich's denn wissen?  Es würde mir weiter doch nichts
+helfen, als daß ich einmal wieder über Sie lachen könnte.  Das ist mir
+gewiß etwas Seltnes?—Haben Sie mich sonst noch wohin zu schicken?
+Ich habe ohnedem auf dem Ratskeller eine kleine Verrichtung;
+vielleicht ist's ein Gang?  Nu?
+
+Damis (erzürnt).  Nein, Schurke!
+
+Anton.  Da haben wir's!  Er hat alles gelesen, nur kein
+
+Komplimentierbuch.—Aber besinnen Sie sich.  Etwa in den Buchladen?
+
+
+Damis.  Nein, Schurke!
+
+Anton.  Ich muß das Schurke “
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+
+„Anton.  Ich muß das Schurke so oft hören, daß ich endlich selbst
+glauben werde, es sei mein Taufname.—Aber zum Buchbinder?
+
+Damis.  Schweig, oder—
+
+Anton.  Oder zum Buchdrucker?  Zu diesen dreien, Gott sei Dank! weiß
+ich mich, wie das Färbepferd um die Rolle.
+
+Damis.  Sieht denn der Schlingel nicht, daß ich lese?  Will er mich
+noch länger stören?
+
+Anton (beiseite).  St!  Er ist im Ernste böse geworden.  Lenk ein,
+Anton.—Aber, sagen Sie mir nur, was lesen Sie denn da für ein Buch?
+Potz Stern, was das für Zeug ist!  Das verstehen Sie?  Solche
+Krakelfüße, solche fürchterliche Zickzacke, die kann ein Mensch lesen?
+Wann das nicht wenigstens Fausts Höllenzwang ist—Ach, man weiß es ja
+wohl, wie's den Leuten geht, die alles lernen wollen.  Endlich
+verführt sie der böse Geist, daß sie auch hexen lernen.—
+
+Damis (nimmt sein muntres Wesen wieder an).  Du guter Anton!  Das ist
+ein Buch in hebräischer Sprache.—Des Ben Maimon Jad chasaka.
+
+Anton.  Ja doch; wer's nur glauben wollte!  Was Hebräisch ist, weiß
+ich endlich auch.  Ist es nicht mit der Grundsprache, mit der
+Textsprache, mit der heiligen Sprache einerlei?  Die warf unser Pfarr,
+als ich noch in die Schule ging, mehr als einmal[…]“
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+„würde er gewiß sagen: Manus manum lavat.  Hast
+du ihm die alberne Gewohnheit nicht angemerkt, daß er bei aller
+Gelegenheit ein lateinisches Sprüchelchen mit einflickt?  Der alte
+Idiote denkt, weil er so einen gelehrten Sohn hat, müsse er doch auch
+zeigen, daß er einmal durch die Schule gelaufen sei.
+
+Anton.  Hab ich's doch gedacht, daß es etwas Albernes sein müsse; denn
+manchmal mitten in der Rede murmelt er etwas her, wovon ich kein Wort
+verstehe.
+
+Damis.  Doch schließe nur nicht daraus, daß alles albern sei, was du
+nicht verstehst.  Ich würde sonst viel albernes Zeug wissen.—Aber, o
+himmlische Gelehrsamkeit, wieviel ist dir ein Sterblicher schuldig,
+der dich besitzt!  Und wie bejammernswürdig ist es, daß dich die
+wenigsten in deinem Umfange kennen!  Der Theolog glaubt dich bei einer
+Menge heiliger Sprüche, fürchterlicher Erzählungen und einiger übel
+angebrachten Figuren zu besitzen.  Der Rechtsgelehrte bei einer
+unseligen Geschicklichkeit, unbrauchbare Gesetze abgestorbner Staaten,
+zum Nachteile der Billigkeit und Vernunft, zu verdrehen und die
+fürchterlichsten Urtel in einer noch fürchterlichern Sprache
+vorzutragen.  Der Arzt endlich glaubt sich wirklich deiner bemächtiget
+zu haben, wann er durch eine Legion barbarischer Wörter die Gesunden
+krank und die Kranken noch kränker machen kann.  Aber, o betrogene
+Toren[…]“
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+
+„zu Ihrer
+
+Gelehrsamkeit rechnen?  Es war ja mein Ernst nicht.—
+
+
+Damis.  Und also denkst du wohl selber Deutsch zu können?
+
+Anton.  Ich? ich? nicht Deutsch!  Es wäre ein verdammter Streich, wenn
+ich Kalmuckisch redete und wüßte es nicht.
+
+Damis.  Unter können und können ist ein Unterschied.  Du kannst
+Deutsch, das ist: du kannst deine Gedanken mit Tönen ausdrücken, die
+einem Deutschen verständlich sind; das ist, die ebendie Gedanken in
+ihm erwecken, die du bei dir hast.  Du kannst aber nicht Deutsch, das
+ist: du weißt nicht, was in dieser Sprache gemein oder niedrig, rauh
+oder annehmlich, undeutlich oder verständlich, alt oder gebräuchlich
+ist; du weißt ihre Regeln nicht; du hast keine gelehrte Kenntnis von
+ihr.
+
+Anton.  Was einem die Gelehrten nicht weismachen wollen!  Wenn es nur
+auf Ihr "das ist" ankäme, ich glaube, Sie stritten mir wohl gar noch
+ab, daß ich essen könnte.
+
+Damis.  Essen?  Je nun wahrhaftig, wenn ich es genau nehmen will, so
+kannst du es auch nicht.
+
+Anton.  Ich? ich nicht essen?  Und trinken wohl auch nicht?
+
+Damis.  Du kannst essen, das ist: du kannst die Speisen zerschneiden,
+in Mund stecken, kauen, herunterschlucken und so weiter.  Du kannst
+nicht essen, das ist: du weißt die[…]“
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+„Damis.  Chinesisch?  Malabarisch?  Ich wüßte nicht woher.
+
+Anton.  Wie Sie herumraten.  Haben Sie meinen Vetter nicht gesehn?  Er
+besuchte mich vor vierzehn Tagen.  Der redete nichts als diese Sprache.
+
+Damis.  Der Rabbi, der vor kurzen zu mir kam, war doch wohl nicht dein
+
+Vetter?
+
+
+Anton.  Daß ich nicht gar ein Jude wäre!  Mein Vetter war ein Wende;
+ich kann Wendisch; und das können Sie nicht.
+
+Damis (nachsinnend).  Er hat recht.—Mein Bedienter soll eine Sprache
+verstehen, die ich nicht verstehe?  Und noch dazu eine Hauptsprache?
+Ich erinnere mich, daß ihre Verwandtschaft mit der hebräischen sehr
+groß sein soll.  Wer weiß, wieviel Stammwörter, die in dieser verloren
+sind, ich in jener entdecken könnte!—Das Ding fängt mir an, im Kopfe
+herumzugehen!
+
+Anton.  Sehen Sie!—Doch wissen Sie was?  Wenn Sie mir meinen Lohn
+verdoppeln, so sollen Sie bald so viel davon verstehen als ich selbst.
+Wir wollen fleißig miteinander wendisch parlieren, und—Kurz,
+überlegen Sie es.  Ich vergesse über dem verdammten Plaudern meinen
+Gang auf den Ratskeller ganz und gar.  Ich bin gleich wieder zu Ihren
+Diensten.
+
+Damis.  Bleib itzt hier; bleib hier.
+
+Anton.  Aber Ihr Herr Vater kömmt.  Hören Sie?  Wir könnten doch nicht
+weiterreden.  (Geht ab.)
+
+Damis.  Wenn[…]“
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+„Chrysander.  Das sage nicht!  Ich habe in meiner Jugend auch studiert;
+ich bin bis auf das Mark der Gelehrsamkeit gekommen.  Aber daß ich
+beständig über den Büchern gelegen hätte, das ist nicht wahr.  Ich
+ging spazieren; ich spielte; ich besuchte Gesellschaften; ich machte
+Bekanntschaft mit Frauenzimmern.  Was der Vater in der Jugend getan
+hat, kann der Sohn auch tun; soll der Sohn auch tun.  A bove majori
+discat arare minor! wie wir Lateiner reden.  Besonders das
+Frauenzimmer laß dir, wie wir Lateiner reden, de meliori empfohlen
+sein!  Das sind Narren, die einen jungen Menschen vor das Frauenzimmer
+ärger als vor Skorpionen warnen; die es ihm, wie wir Lateiner reden,
+cautius sanguine viperino zu fliehen befehlen.—
+
+Damis.  Cautius sanguine viperino?  Ja, das ist noch Latein!  Aber wie
+heißt die ganze Stelle?
+
+Cur timet flavum Tiberim tangere? cur olivum Sanguine viperino Cautius
+vitat?—
+
+Oh, ich höre schon, Herr Vater, Sie haben auch nicht aus der Quelle
+
+geschöpft!  Denn sonst würden Sie wissen, daß Horaz in ebender Ode die
+
+Liebe als eine sehr nachteilige Leidenschaft beschreibt, und das
+
+Frauenzimmer—
+
+
+Chrysander.  Horaz!  Horaz!  Horaz war ein Italiener und meinet das
+italienische Frauenzimmer.  Ja vor dem italienischen warne ich dich
+auch! das ist gefährlich[…]“
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+„Chrysander.  Quae, qualis, quanta!  Jetzt und damals!  Tempora
+mutantur! wie wir Lateiner sagen.
+
+Damis.  Tempora mutantur?  Ich bitte Sie, legen Sie doch die
+
+Vorurteile des Pöbels ab.  Die Zeiten ändern sich nicht.  Denn lassen
+
+Sie uns einmal sehen: was ist die Zeit?—
+
+
+Chrysander.  Schweig! die Zeit ist ein Ding, das ich mir mit deinem
+unnützen Geplaudre nicht will verderben lassen.  Meine damaligen
+Vorschriften waren nach dem damaligen Maße deiner Erfahrung und deines
+Verstandes eingerichtet.  Nun aber traue ich dir von beiden so viel zu,
+daß du Ergötzlichkeiten nicht zu Beschäftigungen machen wirst.  Aus
+diesem Grunde rate ich dir also—
+
+Damis.  Ihre Reden haben einigen Schein der Wahrheit.  Allein ich
+dringe tiefer.  Sie werden es gleich sehen.  Der Status Controversiä
+ist—
+
+Chrysander.  Ei, der Status Controversiä mag meinetwegen in Barbara
+oder in Celarent sein.  Ich bin nicht hergekommen mit dir zu
+disputieren, sondern—
+
+Damis.  Die Kunstwörter des Disputierens zu lernen?  Wohl!  Sie müssen
+also wissen, daß weder Barbara noch Celarent den Statum—
+
+Chrysander.  Ich möchte toll werden!  Bleib Er mir, Herr Informator,
+mit den Possen weg, oder—
+
+Damis.  Possen? diese seltsamen Benennungen sind zwar Überbleibsel der
+scholastischen Philosophie, das ist wahr; aber doch solche
+Überbleibsel—
+
+Chrysander.  Über die ich die[…]“
+
+Auszug aus
+Der junge Gelehrte
+Gotthold Ephraim Lessing
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=361713253
+Dieses Material ist möglicherweise urheberrechtlich geschützt.
+
+Tausende Kraken versammeln sich vor der kalifornischen Küste in der Tiefsee. Nun haben Biologen wahrscheinlich das Geheimnis des so genannten Oktopus-Gartens gelüftet.
+von Daniel Lingenhöhl
+Zahlreiche Kraken versammeln sich auf dem Tiefseeboden, wo sie ihren Nachwuchs hüten.
+© 2022 MONTEREY BAY AQUARIUM RESEARCH INSTITUTE (MBARI) (AUSSCHNITT)
+Tausende Kraken versammeln sich am Davidson Seamount vor der kalifornischen Küste. Dort brüten sie jahrelang ihren Nachwuchs aus.
+In mehr als 3000 Meter Tiefe vor der Küste Zentralkaliforniens befindet sich am Davidson Seamount die größte bekannte Kinderstube von Tiefseekraken: Bis zu 20 000 Weibchen könnten sich hier einfinden, um ihren Nachwuchs auszubrüten, schätzen die Entdecker vom Monterey Bay National Marine Sanctuary der US-Behörde NOAA, die 2018 auf den Seeberg stießen. Über Jahre hat ein Team um James Barry vom Monterey Bay Aquarium Research Institute (MBARI) diese Kinderstube beobachtet und legt nun in »Science Advances« eine Erklärung für dieses Verhalten vor: Das warme Wasser hydrothermaler Quellen am Seamount fördert demnach die Entwicklung der Eier und der geschlüpften Jungkraken, was deren Überlebenswahrscheinlichkeit steigert, so die Arbeitsgruppe.
+
+Der Davidson Seamount ist ein erloschener Unterwasservulkan und eine der wenigen bisher aufgespürten Kinderstuben von Kraken. Weitere befinden sich beispielsweise vor der Pazifikküste Costa Ricas. Vor Kalifornien finden sich tausende Kraken der Art Muusoctopus robustus ein, welche die Forscher wegen ihrer schimmernden Haut auch Perlenkraken nennen. Während 14 Tauchfahrten wies Barrys Team nicht nur Weibchen, sondern auch Männchen, befruchtete Eier und frisch geschlüpfte Jungkraken nach, weswegen rasch klar war, dass die Ansammlung vor allem zur Fortpflanzung dient. Größere Jungtiere oder fressende Exemplare beobachteten die Wissenschaftler hingegen nicht.
+
+Während der ersten Tauchfahrt zum Seamount bemerkten die Teilnehmer der Expedition jedoch Schlieren im Umfeld: Sie entstehen, wenn sich warmes Wasser aus hydrothermalen Quellen mit dem kalten Wasser der Tiefsee vermischt. Weitere Tauchgänge zeigten dann, dass sich die Kraken vor allem in Spalten und Klüften des Unterwasserbergs konzentrieren, wo das warme Wasser austritt und wo deshalb die Temperaturen deutlich über dem eisigen Umfeld in 3200 Meter Tiefe liegen: Während die Wassertemperatur im Umfeld bei 1,6 Celsius liegt, steigt sie an den Quellen auf angenehme 11 Grad Celsius.
+
+Da die Kraken kaltblütig sind, verlangsamen die äußeren Bedingungen ihren Stoffwechsel und die Entwicklung der Eier, weshalb viele Tiefseekraken jahrelang auf ihren Eiern sitzen, um sie auszubrüten. Und je kälter das Wasser ist, desto länger zieht sich die Brutperiode. Ausgehend von den eisigen Bedingungen vor Ort schätzten die Biologen die Zeit bis zum Schlüpfen auf fünf bis acht Jahre, doch die Überwachung verschiedener Weibchen, die anhand äußerer Merkmale wie Narben identifiziert wurden, zeigte, dass der Nachwuchs hier schon in weniger als zwei Jahren schlupfreif war.
+
+Das warme Wasser der hydrothermalen Quellen hatte also die Reifung deutlich beschleunigt, wie die Forscher vermuten. Und damit reduziere sich auch das Risiko, dass die Krakenmütter oder ihr Nachwuchs verletzt, gefressen oder krank wird. Denn die enorme Anzahl an potenzieller Beute ziehe auch Fressfeinde oder Aasfresser an, so die Biologen: In der Tiefsee sind Ressourcen rar; derartige Ansammlungen sind also ein lohnendes Ziel – zumal die Weibchen nach erfolgreicher Brut sterben. Neben den Kraken beobachteten Barry und Co zahlreiche andere Tierarten, die von den Eiern, Jungkraken und toten Müttern profitieren.
+
+»Wichtige biologische Hotspots wie diese Tiefseekinderstube müssen geschützt werden«, sagt Barry. »Klimawandel, Fischerei und Bergbau bedrohen die Tiefsee. Der Schutz der einzigartigen Umgebungen, in denen sich Tiefseetiere versammeln, um sich zu ernähren oder fortzupflanzen, ist von entscheidender Bedeutung.« Das Monterey Bay National Marine Sanctuary wurden glücklicherweise schon 2008 um Davidson Seamount erweitert.
+
+DIE ORANIENBAUMER HEIDE
+:
+Unterwegs auf wilden Pfaden
+Seit Jahrhunderten gibt es keine wilden Pflanzenfresserherden mehr in Deutschland. Dabei schaffen sie einzigartige Landschaften. Wie das aussieht, zeigt sich in Sachsen-Anhalt. Teil 5 unserer Serie über Wildnis in Deutschland.
+von Ralf Stork
+Heckrinder im Herbst
+© AILEEN KRAUSE (AUSSCHNITT)
+Rein rechtlich gelten die Heckrinder als Haustiere, doch in ihren körperlichen Eigenschaften ähneln sie den Wildrindern von einst. Ohne sie würde aus der Oranienbaumer Heide in wenigen Jahren ein Jungwald.
+Als der Wagen die Landstraße verlässt und auf einen Feldweg in die Oranienbaumer Heide einbiegt, ist von der angekündigten Offenlandschaft nicht viel zu sehen: Aus dem Fenster blickt man auf einen Birkenwald. »Natürliche Sukzession«, sagt Stefan Reinhard und lenkt den Wagen weiter über das sandige Terrain. »Ohne ein Management würden alle Heideflächen heute so aussehen.«
+
+Die Region rund um Dessau und Wörlitz in Sachsen-Anhalt ist berühmt für ihre Schlösser und Parks. In der zweiten Hälfte des 18. Jahrhunderts ließ hier Fürst Franz von Anhalt-Dessau sein Gartenreich nach dem Vorbild englischer Landschaftsparks errichten. Heute ist es UNESCO-Welterbe. Und mittendrin, gleich südlich der Schloss- und Parkanlagen Oranienbaum, liegt die Oranienbaumer Heide. Auch sie ist eine vom Menschen geschaffene Kulturlandschaft. Allerdings stand an ihrem Anfang kein aufklärerischer Gedanke: Hier räumte sich die Rote Armee ein riesiges Gebiet für Schießübungen frei. Wälder wurden abgeholzt, die Ketten der Panzer wühlten den Boden auf, der Sprengstoff setzte Waldstücke in Brand. Am Ende war eine etwa 1000 Hektar große Fläche entstanden, auf der sich offene und halboffene Bereiche abwechseln.
+
+Solche Landschaften sind rar in Deutschland. Umso mehr, als der Truppenübungsplatz nicht von Straßen zerschnitten oder durch lange landwirtschaftliche Nutzung überdüngt ist. Ganz unbeabsichtigt hatte das Militär einen überaus wertvollen Lebensraum für Spezialisten geschaffen, die in Deutschland nur noch an wenigen Orten ein Zuhause finden. Im Jahr 1992 aber zogen die Russen ab. Ohne ihre Panzerketten und das militärische Feuerwerk drohte die Verbuschung, der Jungwaldaufwuchs, die Sukzession, wie es Reinhard nennen würde.
+
+Dass dies nicht geschieht, dafür ist er selbst mitverantwortlich. Reinhard ist Geschäftsführer der Primigenius Köthener Naturschutz und Landschaftspflege gGmbH. Ein landwirtschaftlicher Betrieb mit Bio-Zertifizierung, vom Regionalverband Köthen des Naturschutzbunds Deutschland (NABU) 2002 gegründet. Spezialgebiet: Naturschutzpflege mit großen Weidetieren.
+
+In unregelmäßigen Abständen schafft es der Chef auch selbst einmal raus zu einer Kontrollfahrt. So wie heute. Sein Wagen rumpelt an einem dünnen Weidezaun entlang, irgendwann quert er ein Viehgitter. Und dann endlich öffnet sich die Landschaft zu einer weiten Ebene mit Heide und Gräsern. Bäume und Sträucher gibt es ebenfalls, aber hier dominieren sie nicht, sondern geben der offenen Fläche nur ein bisschen zusätzliche Struktur: Heideland.
+
+
+Serie: Wildnis in Deutschland
+Vom Südzipfel der Republik bis in den hohen Norden – überall findet man sie inzwischen wieder, die Landschaften, in denen der Mensch die Natur Natur sein lässt. Nach Jahrhunderten der Nutzung finden sie nur langsam zu ihrem ursprünglichen Selbst zurück.
+
+Fünf von ihnen hat unser Autor Ralf Stork für diese Serie bereist. Sie zeigen, wie wirksam Wildnis sein kann angesichts allgegenwärtiger Umweltzerstörung. Und wie weit der Weg zu mehr gesunden Lebensräumen noch ist. Das selbst gesteckte Ziel, zwei Prozent der Landesfläche in Wildnisgebiete umzuwandeln, hat Deutschland weit verfehlt. Aktuell sind es gerade einmal 0,6 Prozent.
+
+21.08.2023: Nationalpark Berchtesgaden: Die Wucht des Wandels
+22.08.2023: Der Anklamer Stadtbruch: Geschöpfe einer wilden Nacht
+23.08.2023: Nationalpark Harz: Wo die wilde Jugend wächst
+24.08.2023: Der Beltringharder Koog: Die Wiedererweckung einer verlorenen Landschaft
+25.08.2023: Die Oranienbaumer Heide: Unterwegs auf wilden Pfaden
+Heckrinder gestalten die Landschaft um
+Kurz darauf kommt, rechts vom Weg, das in den Blick, wonach Reinhard gesucht hat: Etwa 50 Meter entfernt steht eine Gruppe kräftiger Rinder mit ausladenden Hörnern. »Das sind unsere Heckrinder«, sagt Reinhard. Mit ihrem Appetit auf frisches Grün helfen sie, die Heidelandschaft offen zu halten. Ihre Hufe und massigen Körper reißen den Boden auf wie einstmals die Panzer. Deutlich sind die häufig genutzten Trampelpfade der Tiere zu erkennen.
+
+Der Großteil der Rinder ist dunkel, fast schwarz gefärbt, mit einem schmalen rötlichen Fellstreifen – dem so genannten Aalstrich – auf dem Rücken. Charakteristisch ist außerdem das weiße, wie mit Mehl bestäubte Maul. Einige Rinder liegen auf dem Boden und käuen wieder. Andere knabbern an niedrigen Büschen oder schubbern ihren Rücken an kleinen Bäumen. Sie beäugen misstrauisch die Menschen, die da gerade aus dem Auto gestiegen sind. Und sie achten darauf, dass immer gut 20 Meter Sicherheitsabstand zwischen ihnen und den Zweibeinern liegen.
+
+Das könnte Sie auch interessieren:
+Spektrum.de Digitalpaket: Biologische Vielfalt
+ Digitalpaket: Biologische Vielfalt
+Das Ur-Abbild
+© RALF STORK (AUSSCHNITT)
+Das Ur-Abbild | Die Brüder Lutz und Heinz Heck versuchten, durch die Kreuzung verschiedener Hausrinderrassen den ausgestorbenen Auerochsen wieder zum Leben zu erwecken. Lutz Heck war mit dem Nazi-Politiker Hermann Göring befreundet, der die Zuchtversuche intensiv unterstützte, unter anderem weil er den Auerochsen fest für ein Urzeitreservat für »germanische« Tiere und Pflanzen eingeplant hatte. Im Vergleich zum Auerochsen waren die Heckrinder jedoch deutlich kleiner, nicht so hochbeinig und in ihrer Erscheinungsform immer noch recht vielgestaltig. Von einer Abbildzucht sprechen Fachleute: Das neu gezüchtete Heckrind sah dem Auerochsen ein bisschen ähnlich, mehr aber auch nicht. Wegen ihrer Robustheit werden Heckrinder heute gerne in Naturschutzprojekten mit Ganzjahresweide eingesetzt. Unter dem Namen Taurusrind gibt es aktuell weitere Zuchtversuche. Dabei soll etwa durch das Einkreuzen ursprünglicher Rinderrassen aus Südeuropa das Erscheinungsbild und Verhalten des Heckrinds weiter an das der Auerochsen angepasst werden.
+Heckrinder sind nach den Brüdern Lutz und Heinz Heck benannt. Ihre in den 1920er Jahren begonnene Zucht war der Versuch, den ausgerotteten Auerochsen wieder zum Leben zu erwecken. Selbst wenn es sich bei den Heckrindern nicht um echte Auerochsen handelt, schinden sie doch Eindruck beim Betrachter. Offiziell gelten sie als Haustiere, weshalb sie auch alle eine gelbe Plastikmarke im Ohr tragen. Doch beim Beobachten der Herde, die sich ebenso ruhig wie selbstverständlich durch die karge Heidelandschaft bewegt, wird überhaupt erst deutlich, was im Lauf der Zeit an Wildnis verloren gegangen ist: Es gibt schon sehr, sehr lange keine großen Pflanzenfresser mehr, die in Herden übers Land ziehen. Der Wisent ist im 18. Jahrhundert in Deutschland ausgestorben. Die Ausrottung von Auerochsen und Wildpferden liegt noch länger zurück, und der Rothirsch, der früher in großen Rudeln in die offenen Flussauen zog, wird heute mit Waffengewalt im Wald gehalten.
+
+Obwohl die Heckrinder keine »echten« Wildtiere sind, freut sich das Auge über ihren Anblick. Wichtiger noch ist aber die Arbeit, die sie für den Erhalt der Oranienbaumer Heide leisten. Das seit 1998 geschützte Gebiet gilt inzwischen als eine der artenreichsten Flächen in Sachsen-Anhalt. Erst im Januar 2023 zeichnete Bundesumweltministerin Steffi Lemke das Projekt von Primigenius und der Hochschule Anhalt im Rahmen des UN-Dekade-Projektwettbewerbs als »Best-Practice-Beispiel« im Bereich Kultur- und Agrarlandschaften aus.
+
+Den Mägen der Rinder sei Dank. Viele der Gehölze im Gebiet werden von ihnen verbissen, größere Bäume zum Teil umgedrückt und geschält. Je nach Futtervorliebe der Rinder ist die Vegetation in manchen Bereichen fast bis zum Boden abgefressen. In anderen Bereichen stehen die Pflanzen dagegen knöchel-, knie- oder hüfthoch. Oder die Vegetation fehlt ganz, weil sich die schweren Tiere gezielt Flächen frei scharren, um sich dort im Sand zu wälzen. »Die Rinder schaffen hier ein Mosaik an Strukturen, das wir mit mechanischen Mitteln gar nicht hinkriegen könnten«, sagt Reinhard. Je mehr Strukturen es gibt, desto mehr Nischen für seltene Arten finden sich auch. Die offenen Bodenstellen können von Wildbienen und Erdhummeln genutzt werden, Pionierpflanzen können sich ansiedeln.
+
+Heidelandschaft
+© RALF STORK (AUSSCHNITT)
+Heidelandschaft | Je mehr Strukturen es in der Landschaft gibt, desto mehr Nischen für spezialisierte Bewohner finden sich auch.
+Haufenweise Biotope
+Und dann ist da noch der Kot der Tiere: jeder Dunghaufen ein Biotop für sich. Stefan Reinhard bricht einen trockenen Fladen auseinander. Darin sind viele Gänge zu erkennen: »Mistkäfer, Fliegen und andere Insekten nutzen den Kot als Nahrung und ziehen ihn teilweise in den Boden«, sagt er. Die Insekten wiederum stehen auf der Speisekarte eines charakteristischen Vogels der Offenlandschaft, des Wiedehopfs. Seit der Beweidung haben seine Bestände in der Heidelandschaft stark zugenommen. Tatsächlich sitzt einer nur ein paar Minuten später auf einem Baum, an dem Reinhard den Wagen vorbeisteuert. Auch Neuntöter sieht man häufig. Dazu sind Wendehälse, Ziegenmelker und Heidelerchen auf die offene Landschaft und ihren Insektenreichtum angewiesen.
+
+Die Fläche, auf der sich die aktuell 55 Heckrinder frei bewegen, ist 800 Hektar groß. »Man könnte leicht den ganzen Tag in der Heide unterwegs sein, ohne ein einziges Tier zu Gesicht zu bekommen«, sagt Reinhard. Weil die Rinder aber keine Wild-, sondern Nutztiere sind, müssen sie – laut landwirtschaftlicher Verordnung – täglich in Augenschein genommen werden. Einige Kühe sind deshalb mit einem Senderhalsband ausgestattet, über das die Herde angepeilt werden kann.
+
+Das Gleiche gilt für die zweite Tierart, die bei der Offenhaltung der Heidelandschaft hilft: Reinhard ruckelt mit dem Wagen auf immer schmaleren Wegen zu einer großen, offenen Fläche, die durch ein Waldstück vom Hauptweg getrennt ist. Nachdem er den Motor abgestellt hat, dauert es nicht lange, bis der Wagen von einer Gruppe Pferde umringt ist. Insgesamt 36 Koniks (polnisch »Pferdchen«) helfen ebenfalls bei der Heidepflege. Koniks sind eine robuste Hauspferderasse aus Polen. Früher nahm man an, dass sie von letzten europäischen Wildpferden – den Tarpanen – abstammen. Diese Hypothese ist durch Genanalysen jedoch mittlerweile widerlegt worden. Ihre ausgesprochene Neugier und Menschenfreundlichkeit wollen auch nicht recht zu einem echten Wildpferd passen. Bei dem Kontrollgang jedenfalls werden die Menschen auf Schritt und Tritt begleitet und beschnuppert.
+
+Wilde Weiden
+Aber trotz ihrer Freundlichkeit sind die Koniks sehr robust und bestens an das ganzjährige Leben in der Wildnis der Oranienbaumer Heide angepasst. Und sie entwickeln genau solche Herdenstrukturen, wie es echte Wildpferde auch tun würden: »Es gibt zwei Haremsgruppen mit je einem Hengst«, sagt Reinhard. Obwohl alle Pferde auf relativ kleiner Fläche beieinanderstehen, kann man die Gruppen gut auseinanderhalten. Sie stehen räumlich etwas getrennt voneinander, die Hengste lassen sich kaum aus den Augen. Dann gibt es noch einen weiteren kleinen Trupp, der etwas abseits steht: vier männliche Pferde und eine Stute. Die Stute ist kürzlich aus einem anderen Beweidungsprojekt in die Oranienbaumer Heide gekommen und hat noch keinen Anschluss an eine der Haremsgruppen gefunden. Deshalb gesellt sie sich erst einmal zu den Außenseitern. Wenig später kommt es sogar zur Auseinandersetzung zwischen den Hengsten: Mit stark aufgewölbtem Hals und in ausladendem Trab laufen sie nebeneinanderher, verharren, beriechen sich, steigen hoch und treten mit der Hinterhand aus. Nach wenigen Minuten ist der ritualisierte Kampf auch schon wieder vorbei, und beide Hengste ziehen sich zu ihren Gruppen zurück.
+
+Kämpfende Hengste
+© RALF STORK (AUSSCHNITT)
+Kämpfende Hengste | Die männlichen Anführer der beiden Konik-Harems sind zwar sterilisiert, dennoch zeigen sie typisches Hengstverhalten. Nachwuchs auf der Heide ließe sich nicht vor den Wölfen schützen.
+Während die Rinder untereinander meist einen Abstand von 10 bis 15 Metern einhalten, stehen die Pferde oft sehr nah beieinander, häufig im direkten Körperkontakt. Auch dieses Verhalten gibt der Oranienbaumer Heide ihre Gestalt: Wo die Koniks sich über einen längeren Zeitraum aufhalten, mit den Hufen scharren oder sich auf dem Boden wälzen, wächst bald kein Gras mehr. Trittschäden und intensives Äsen an konzentrierten Stellen sorgen dafür, dass die Grasnarbe verletzt und der Boden frei gelegt wird. Andere Bereiche, unter anderem Kotstellen, werden von den Pferden gemieden, so dass dort die Vegetation höher wachsen kann.
+
+Bei genauerem Hinsehen fällt auf, dass Pferde und Rinder keine Jungtiere haben. »Nach 2012 hat sich ein Wolfsrudel im Gebiet gegründet. Weil 2015 und 2016 einzelne Jungtiere, vor allem Fohlen, attackiert wurden, haben wir aus Verantwortung für die Tiere in 2016 dafür gesorgt, dass es keinen Nachwuchs mehr gibt«, sagt Reinhard. Die beiden Hengste sind sterilisiert, haben aber ihr natürliches Herdenverhalten beibehalten. Die vier männlichen Pferde, die sich abseits hielten, sind Wallache. Auch bei den Rindern gibt es nur noch ausgewachsene Tiere, die wehrhaft genug sind, um gegen die Wölfe zu bestehen.
+
+Echte Wildnis mit großen Pflanzenfressern ist in Deutschland eben kompliziert. Bei Offenlandschaften sowieso. In der Oranienbaumer Heide muss im Winter etwas Heu zugefüttert werden, weil dann die mageren Flächen nicht genug Nahrung bieten. Auch künstliche Tränken gibt es in dem Gebiet, dem natürliche Gewässer fehlen. Und weil die nicht einmal 100 Rinder und Pferde nicht alle Pflanzen abfressen, müssen Sträucher und Bäume auch weiterhin mechanisch entfernt werden, um die Freiflächen der Oranienbaumer Heide dauerhaft offen zu halten.
+
+Wiedehopf
+© RALF STORK (AUSSCHNITT)
+Wiedehopf | Der Insektenfresser ist in Mitteleuropa sehr selten geworden. Er braucht zum Überleben trockene, warme und offene Landschaften, in denen der Pestizideinsatz gering ist. Truppenübungsplätze zählen darum zu seinem bevorzugten Brutrevier.
+In einer echten Wildnis wären die Tiere sich selbst überlassen und müssten mit der Witterung, mit Nahrungsmangel und Wolfsangriffen umgehen. »Von der Veranlagung haben die Tiere auch das Potenzial für ein Leben ohne menschliche Obhut«, sagt Reinhard. In einer echten Wildnis könnten sich die Tiere allerdings wirklich frei bewegen und vermehren. Bei Nahrungsknappheit weiterziehen. Bei Überbevölkerung abwandern (oder im kalten Winter verhungern.) »Unsere Beweidung ist ein Kompromiss des Machbaren«, sagt Stefan Reinhard. Mehr freie Natur ist im dicht besiedelten Deutschland nicht möglich.
+
+Und trotzdem bleibt das Bild der Rinder und Pferde in ihrer natürlichen Umgebung lange im Gedächtnis. Es wirkt so natürlich – so richtig –, die großen Tiere in der Landschaft zu sehen. Wenn sie die auch nicht gleich in eine Wildnis verwandeln, wilder machen sie sie allemal.
+
+WALDSCHUTZ-ZERTIFIKATE
+:
+Die große Kompensationslüge
+Erneut fallen Kohlenstoffdioxid-Zertifikate beim genauen Hinsehen durch. 26 untersuchte Kompensationsprojekte verhindern entweder keine Emissionen oder viel weniger als angegeben.
+von Annette Doerfel
+Drohnenaufnahme eines Waldes in Borneo, der zum Teil entwaldet wird
+© RICHCAREY / GETTY IMAGES / ISTOCK (AUSSCHNITT)
+Selbst wenn gerodete Flächen wieder aufgeforstet werden sollten: Oft gehen Setzlinge in großer Zahl wieder ein, so dass die versprochene Kohlendioxidaufnahme gar nicht stattfindet. Zudem dauert es viele Jahrzehnte, bis die Bäume ihr Speicherpotenzial voll ausbilden.
+Viele große Firmen schreiben sich das Label »klimaneutral« auf ihre Fahne – und wiegen die Kundinnen und Kunden in dem Glauben, dass sie mit dem Kauf der Produkte der Umwelt etwas Gutes tun. Die Idee dahinter: Unweigerlich anfallende Treibhausgasemissionen werden mit Umweltprojekten kompensiert. Diese Maßnahmen sollen beispielsweise gezielt tropische Regenwälder vor der drohenden Abholzung schützen, trockengelegte Moore wieder vernässen oder große Areale wieder aufforsten. Doch offenbar klingt das zu schön, um wahr zu sein. Schon im Mai 2023 hatte eine größere Recherche aufgedeckt, dass die meisten CO2-Zertifikate nichts als eine große Werbenummer sind.
+
+Zum gleichen Schluss kommt nun eine Analyse von Waldschutzprojekten aus sechs südamerikanischen und afrikanischen Ländern, die von dem US-amerikanischen Unternehmen Verra zertifiziert sind. Für die in »Science« erschienene Studie wurden 26 so genannte REDD+-Programme (Reduced Emissions from Deforestation and Forest Degradation) von den Autorinnen und Autoren untersucht. Das ernüchternde Ergebnis: Nur etwa sechs Prozent der CO2-Zertifikate aus den untersuchten Projekten sind tatsächlich mit vermiedenen Emissionen verknüpft. Die meisten verhindern keine oder viel weniger Emissionen als angegeben. Darüber hinaus zeigen die Autoren, dass 18 REDD+-Projekte rund 62 Millionen Gutschriften für den Kohlenstoffausgleich generiert haben. Etwa 14,6 Millionen davon wurden bereits von Unternehmen auf der ganzen Welt zum Ausgleich ihrer Kohlenstoffemissionen verwendet. Den Schätzungen der Studie zufolge wurde mit diesen Projekten fast dreimal so viel Kohlenstoff kompensiert, wie sie tatsächlich zum Klimaschutz beigetragen haben. Weitere 47,7 Millionen Gutschriften sind noch auf dem Markt verfügbar. »Die Projekte sind ineffektiv für den Klimaschutz, aber ökonomisch effektiv für die Betreiber«, fasst Michael Köhl vom Institut für Holzwissenschaften der Universität Hamburg die Ergebnisse gegenüber dem Science Media Center (SMC) zusammen.
+
+Zertifizierer wie Verra, die etwa drei Viertel aller Emissionen auf dem freiwilligen, nicht staatlichen Kompensationsmarkt bewerten, berechnen die Einsparungen, indem sie beispielsweise Abholzungstrends größerer Waldflächen in die Zukunft fortschreiben und so bestimmen, wie viel der Schutz einer Teilfläche bringt. Doch manche Kritiker bemängeln, dass es fast unmöglich ist, zu ermitteln, wie viele Emissionen ein Waldschutzprojekt tatsächlich einsparen wird, da nie sicher ist, was ohne das Projekt geschehen wäre. Ein weiteres Problem: Die Berechnungen sind für zehn Jahre festgelegt, auch wenn sich die Umstände ändern. Zudem würden oft Flächen gewählt, die ohnehin einfach zu schützen sind.
+
+Gegenüber dem SMC stellt Jonas Hein vom German Institute of Development and Sustainability (IDOS) generell CO2-Kompensation durch Waldschutz in Frage. So würden Kohlenstoffmärkte auf der Annahme basieren, dass CO2 – ganz egal ob aus einem Kohlekraftwerk oder aus einem verbrannten Baum – eine gleichförmige Ware darstellt und somit der Schutz von Wäldern die fossilen Emissionen eines Kraftwerks neutralisieren kann. »Hier werden aus meiner Sicht jedoch Äpfel mit Birnen verglichen. Die Emissionen eines Kohlekraftwerks entstammen aus der Verbrennung von Millionen Jahre alter, hochkonzentrierter und festgebundener Biomasse. Diese Emissionen würden ohne den Menschen nicht in die Atmosphäre gelangen«, sagt er. Wälder hingegen würden CO2 zunächst für deutlich kürzere Zeiträume binden und Emissionen können zum Beispiel durch politische Entscheidungen – wie die Umwandlung in Plantagen – oder Feuer unmittelbar in die Atmosphäre gelangen. »Waldschutzprojekte wären klimapolitisch vor allem dann effektiv, wenn sie auf Flächen umgesetzt würden, die tatsächlich unmittelbar vor der Entwaldung stehen, zum Beispiel in eine Plantage umgewandelt werden sollen.« Hier bestünden jedoch zwei Probleme: Erstens würden Flächen deswegen zu Plantagen umgewandelt, weil es eine steigende Nachfrage beispielsweise nach Palmöl gibt. Zweitens sind die Opportunitätskosten genau deswegen auf diesen Flächen besonders hoch.
+
+Sind die Waldschutz-Zertifikate also generell gescheitert? »Es gibt eine Reihe unabhängiger akkreditierter Organisationen, die Zertifikate ausstellen«, sagt Sven Günter vom Institut für Waldwirtschaft des Johann Heinrich von Thünen-Instituts gegenüber dem SMC. Diese wären allerdings ebenfalls keine Gewähr für Erfolg, sondern lediglich eine bescheinigte Experteneinschätzung für wahrscheinlichen Erfolg. »Überspitzt formuliert sind Zertifikate im Waldbereich Wetten in die Zukunft – sowohl hinsichtlich vermiedener Entwaldung als auch hinsichtlich Aufforstung. Diese Wetten haben sehr unterschiedliche Gewinnchancen«, so der Experte
+
+WARKUS' WELT
+:
+Rousseaus Garten
+Der Slogan »Zurück zur Natur« wird Jean-Jacques Rousseau zugeschrieben. Tatsächlich allerdings war das etwas anders gemeint. Gärten und Parks wurden trotzdem von seinem Denken inspiriert.
+von Matthias Warkus
+Blick über einen mit Statuen gesäumten Weg auf einen großen Brunnen.
+© CONSU1961 / GETTY IMAGES / ISTOCK (AUSSCHNITT)
+Geometrisch angelegte Parks mit Brunnen, Sichtachsen und leicht bekleideten Statuen sind typisch für Barockgärten.
+Ich lebe in Thüringen, das angeblich die höchste Schlösserdichte Europas hat. Man kann hier quasi keinen Schritt vor die Tür machen, ohne ein Schloss zu besichtigen, und wenn man ein Schloss besichtigt, dann spaziert man eigentlich auch immer durch irgendwelche Parks und Gärten.
+
+Sie werden wahrscheinlich ungefähr wissen, dass man bei Schlossgärten ganz grob zwei Arten unterscheiden kann. Zum einen die barocken mit den exakt gestutzten Buchsbäumen, den symmetrischen, geometrischen Ornamenten aus Blumenbeeten und den schnurgeraden Alleen. Zum anderen, deutlich später, die englischen Gärten, die asymmetrisch und »natürlicher« gestaltet sind, mit Baumhainen, Hügeln, Lichtungen, Wasserflächen und kleinen Ziergebäuden dazwischen.
+
+Nach meiner Erfahrung hört man praktisch bei jeder Erläuterung eines größeren Schlossparks, der Unterschied dieser beiden Arten von Gärten sage etwas darüber aus, dass sich die Einstellung des Zeitgeists zur Natur geändert habe. Das komme in dem Ausspruch »Zurück zur Natur« des berühmten Philosophen Jean-Jacques Rousseau (1712–1778) pointiert zum Ausdruck.
+
+Leider ist diese beliebte Darstellung nicht ganz richtig. Der Slogan »Zurück zur Natur« hat keinen identifizierbaren Urheber und schon gar nicht Rousseau. Mit ihm ist auch nicht gemeint, der Mensch solle zu einem »primitiven« Leben zurückkehren: Rousseau hat es ganz explizit abgelehnt, die Menschen »zurück in die Wälder« zu schicken, um dort wieder »mit den Bären zu leben« – das auszuprobieren, wollte er seinen Gegnern überlassen. Ihm ging es darum, einen Zustand der Gleichheit herzustellen, der für ihn sozusagen eine Erfordernis der Naturgesetze war und von dem nicht einmal ganz klar ist, ob es ihn jemals gegeben hat. Zudem entstehen die ersten Landschaftsgärten in England bereits zu einer Zeit, als Rousseau noch ein Schuljunge ist.
+
+Rousseaus Erbe
+Aber die Entwicklung des Landschaftsparks ist dennoch eng mit Rousseaus Denken verknüpft: In seinem sensationell erfolgreichen Briefroman »Julie oder die Neue Heloise« (1761) beschreibt er ausführlich einen fiktiven Garten, der viele Merkmale des englischen Gartens zeigt und stellenweise eher noch über ihn hinausgeht. Wichtig ist dabei vor allem, dass der Garten, obwohl er aufwändig angelegt und gepflegt ist, »die Hand des Gärtners nicht zeigt«. Er ist eine Ideallandschaft, die quasi »natürlicher als die Natur« ist, wo man zum Beispiel unter Bäumen auf einem Teppich aus feinem Moos dahinschreitet und dabei von einem Baldachin aus eigens in die Äste gepflanzten Ranken und Winden vor der Sonne geschützt wird. Dieser idyllische Garten ist ein Ort, durch den zu spazieren Seelenfrieden bringt und tugendhafte Gedanken ermöglicht.
+
+Das könnte Sie auch interessieren:
+Spektrum Kompakt Erfülltes Leben – Kleine Dinge, große Wirkung
+ Erfülltes Leben – Kleine Dinge, große Wirkung
+Rousseaus Roman war die direkte Inspiration für Marquis René Louis de Girardin, der im nordfranzösischen Ermenonville einen vielbesuchten und vielfach imitierten Garten schuf, der heute als Rousseau-Garten bekannt ist. Die französischen Parks entwickelten die englischen Gärten weiter. Da die Planung städtischer Parks und Grünanlagen sich aus der Tradition der Schlossgärten herausentwickelt hat, sind damit letztlich auch öffentliche Parks (wie etwa der Central Park in New York) indirekt von Rousseaus Ideen inspiriert.
+
+Ich habe hier nur eine kleine Facette davon besprechen können. So sind die englischen Parks Mitte des 18. Jahrhunderts auch dadurch geprägt, dass zu diesem Zeitpunkt in Großbritannien neue ästhetische Theorien populär werden, in denen zum Beispiel das Erhabene eine größere Rolle spielt ; und zu allen Zeiten gibt es eine enge Verbindung zwischen Landschaftsmalerei und Gartenarchitektur. Parks und Gärten sind somit ein gutes Beispiel dafür, wie Philosophie (oder theoretisches Denken allgemein) sich mit kultureller Praxis verzahnt. Dass bis heute Landschaftsparks klischeehaft als gute Orte zum »Philosophieren« gelten, ist kein Wunder, sondern mehr oder minder Absicht.
